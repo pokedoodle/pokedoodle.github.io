@@ -36,6 +36,7 @@ function yesSettings(){
  backgroundVal.style.top="70%";
  timerDiv.style.display = "none";
  pokeName.style.display = "none";
+ helpMe.style.left = "85%";
  document.getElementById("nPSure").style.display="none";
  newPoke.style.display="block";
 }
