@@ -1,0 +1,194 @@
+/*//////// Top UI*/
+.title{
+  top: 0px;
+  position: absolute;
+  width:100%;
+  height:6%;
+  /*border-bottom: 2px solid rgb(200, 200, 200);*/
+  background-color: rgb(20,20,20);;
+  font-family: Calibri, Verdana, sans-serif;
+  font-size: 2vw;
+  text-align: center;
+  color: rgb(200, 200, 200);
+   transition: all .2s ease;
+}
+.title p{
+  position:relative;
+  transition: all .2s ease;
+}
+@keyframes rainbow { /*Adds a rainbow effect to the titlebar */
+0%  {background-color: rgb(207, 69, 69);}
+20% {background-color: rgb(238, 231, 57);}
+40% {background-color: rgb(0, 175, 12);}
+60% {background-color: rgb(46, 98, 255);}
+80% {background-color: rgb(142, 73, 255);}
+100% {background-color: rgb(207, 69, 69);}
+}
+.title:hover{
+animation:rainbow 1s infinite;
+}
+
+/*Credits  hidden behind the title of the app on the photo screen.*/
+.credits{
+  position:fixed;
+  width:100%;
+  font-family: Calibri, Verdana, sans-serif;
+  font-size: 2vw;
+  text-align: center;
+  color: rgb(200, 200, 200);
+  justify-content: space-around;
+  flex-direction: column;
+  display:none;
+}
+.p_b{
+  text-decoration: none;
+  color: rgb(200, 200, 200);
+}
+.ghostName{
+  text-decoration: none;
+  color: rgb(200, 200, 200);
+}
+.leftCred{
+  height:10%;
+}
+
+
+/*//////// Region prompt.*/
+.RegionAsk{
+  position: absolute;
+  background-color: rgb(20,20,20);;
+  border: 2px solid rgb(200, 200, 200);
+  color: rgb(200, 200, 200);
+  top:10%;
+  left:44%;
+  width:10%;
+  height: 35%;
+  font-family: Calibri, Verdana, sans-serif;
+  display:block;
+  transition: all .6s ease;
+    height:auto;
+    padding:.5% .5% .5% .5%;
+}
+
+/*Regions*/
+.Kanto,.Johto,.Hoenn,.Sinnoh,.Unova,.Kalos,.Aloha{
+  font-size: 2vw;
+  left:25px;
+  text-align: center;
+  width:inherit;
+  color:rgb(20,20,20);;
+  background-color: #bad455;
+  border: 1.5px solid rgb(20,20,20);;
+  transition: all .7s ease;
+}
+.Kanto:hover,.Johto:hover,.Hoenn:hover,.Sinnoh:hover,.Unova:hover,.Kalos:hover,.Aloha:hover{
+  background-color: rgb(135, 170, 65);
+  transition: all .1s ease;
+}
+.Kanto:active,.Johto:active,.Hoenn:active,.Sinnoh:active,.Unova:active,.Kalos:active,.Aloha:active{
+  background-color: rgb(125, 0, 0);
+  transition: all .1s ease;
+}
+.regions{
+  height:auto;
+}
+
+/*//////// Timer prompt.*/
+.selectedTimeDiv{
+  position: absolute;
+  background-color: rgb(20,20,20);;
+  border: 2px solid rgb(200, 200, 200);
+  color: rgb(200, 200, 200);
+  top:50%;
+  left:35%;
+  width:30%;
+  height: 130px;
+  text-align: center;
+  display:block;
+  transition: all .7s ease;
+}
+.timeSel{
+  position: absolute;
+  font-size: 3vw;
+  transition: all .7s ease;
+  left:42%;
+}
+.timeSelect{
+  position: relative;
+  top:50%;
+  /*left: -3%;*/
+  width: 70%;
+}
+.clockDWN{
+  position: absolute;
+  font-size: 1.5vw;
+  top:55%;
+  left: 2%;
+}
+.clockUP{
+  position: absolute;
+  font-size: 1.5vw;
+  top:55%;
+  left: 90%;
+}
+.clockUP:hover,.clockDWN:hover,.whiteBG:hover,.blackBG:hover{
+  background-color: rgb(60,60,60);
+  border-radius: 10px;
+  transition: all .1s ease;
+}
+.clockUP:active,.clockDWN:active,.whiteBG:active,.blackBG:active{
+  background-color: rgb(200,200,200);
+  border-radius: 10px;
+  transition: all .1s ease;
+}
+
+
+/*//////// BG prompt.*/
+.backgroundVal{
+  position: absolute;
+  background-color: rgb(20,20,20);;
+  border: 2px solid rgb(200, 200, 200);
+  color: rgb(200, 200, 200);
+  top:70%;
+  left:45%;
+  width:10%;
+  height: 80px;
+  text-align: center;
+  display:block;
+  transition: all .4s ease;
+}
+.whiteBG{
+  position: absolute;
+  top:5%;
+  left:70%;
+  font-size: 2.5vw;
+}
+.blackBG{
+  top:14%;
+  left:1%;
+  height:auto;
+  letter-spacing: 5px;%;
+  position: absolute;
+  font-size: 2vw;
+}
+
+/*Main drawing button - Initiates drawing game.*/
+/*Is called "photo" as a left over from a prevous version.*/
+.photo{
+  bottom:0;
+  width: 50%;
+  height:inherit;
+  background-color: rgb(100,100,100);
+  clear: both;
+  position:fixed;
+  width: 100%;
+  height: 10%;
+  background-color: rgb(20,20,20);;
+  text-align: center;
+  font-size: 4vw;
+  color: rgb(200, 200, 200);
+  align-items:baseline;
+}
+.photo:active{
+  background-color: rgb(200, 200, 200);
+}

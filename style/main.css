@@ -1,0 +1,200 @@
+*{
+  padding:0;
+  margin:0;
+  border:0;
+}
+
+#defaultCanvas0{
+  border: 4px solid rgb(250, 250, 250);
+  border-radius:25px;
+}
+
+html{
+  background-color: rgb(20, 20, 20);
+   overflow:hidden;
+  user-select: none;
+  /*position:fixed; This would fix annoying scrolling on mobile, though it breaks any animated divs. :/ */
+}
+
+
+
+
+/*//////// The entire div for the colours.*/
+.colours{
+  width:75%;
+  left: 12.5%;
+  justify-content: space-between;
+  position:  absolute;
+  display:none;
+ transition: all .2s ease;
+}
+@keyframes coloursAnimation{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+  /*//////// Displays the colours to select.*/
+.colours div{
+  animation: coloursAnimation .2s;
+  width: 100%;
+  height:auto;
+  border: 1.5px solid rgb(20,20,20);;
+  transition: all .5s ease;
+}
+
+
+
+
+
+/*//////// Pen drawer*/
+.pen{
+  display:none;
+  top: 0px;
+  position: absolute;
+    font-size: 1.6vw;
+  width:100%;
+  /*border-bottom: 2px solid rgb(200, 200, 200);*/
+  background-color: rgb(20,20,20);
+  text-align: center;
+  color: rgb(200, 200, 200);
+  transition: all .2s ease;
+}
+.pen:active{
+  background-color: rgb(29, 29, 29);
+  transition: all .2s ease;
+}
+
+.clear p,.settings p,.newPoke p,.npSure p,.picPoke p,.submit p,.mic p{
+  position: relative;
+  top:-2px;
+  text-align: center;
+  font-family: Calibri, Verdana, sans-serif;
+}
+
+
+/*New Pokemon Button*/
+#newPoke:hover,#picPoke:hover,#submit:hover,#nPSure:hover{
+  background-color: rgb(200,200,200);
+}
+
+#newPoke{
+  position:absolute;
+  background:rgb(20,20,20);;
+  border-radius: 5px;
+  top:75%;
+  left:105%;
+  font-size: 4vw;
+  transition: all .1s ease;
+}
+#nPSure{
+  display:none;
+  position:absolute;
+  background:rgb(20,20,20);;
+  border-radius: 5px;
+  top:74.2%;
+  left:84.6%;
+  font-size: 4.5vw;
+  transition: all .2s ease;
+}
+#picPoke{
+  position:absolute;
+  background:rgb(20,20,20);;
+  border-radius: 5px;
+  top:75%;
+  left:-5%;
+  font-size: 4vw;
+  transition: all .1s ease;
+}
+#submit{
+  position:absolute;
+  background:rgb(20,20,20);;
+  border-radius: 5px;
+  top:45%;
+  left:-9%;
+  font-size: 4vw;
+  transition: all .1s ease;
+}
+.submitIcon{
+  text-decoration: none;
+}
+
+
+/*////Pokename and Emoji Clock*/
+.pokeNameText{
+  position: relative;
+  left:-2px;
+}
+
+#pokeName{
+    left:3.5%;
+    text-align: center;
+    display:block;
+      font-size: 4vw;
+    color: rgb(250,250,250);
+    font-family: Calibri, Verdana, sans-serif;
+}
+#timerDiv{
+  left:83%;
+  display:none;
+  transition: all 1s ease;
+}
+#seconds{
+  font-size: 8vw;
+  transition: all 1s ease;
+}
+
+#pokeName,#timerDiv{
+  position: absolute;
+  /*background-color: rgb(20,20,20);;*/
+   top: 10%;
+   text-align: center;
+   /*border: 2px solid rgb(200, 200, 200);*/
+}
+
+/*Settings, mute, and mic buttons*/
+#clear,#settings,#mic{
+  background-color: rgb(20,20,20);;
+  border: 1.5px solid rgb(200, 200, 200);
+}
+#clear:active,#newPoke:active,#nPSure:active,#picPoke:active,#submit:active,#settings:active{  background-color: #B4DA55;}
+
+.mic:hover{
+  animation-name:rainbow;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+
+
+/*Animation when hovering mute button*/
+@keyframes noUseAni{
+  0% {left:10.5%;top:-29%;}
+  50% {left:11%;top:-26%;}
+  100% {left:10.75%;top:-30%;}
+}
+#noUse{
+  position:absolute;
+  font-style: italic;
+  font-size: 1vw;
+  color:rgb(200,200,200);
+  font-family:monospace;
+  display:none;
+  transition: all .7s ease;
+  width:80%;
+}
+#settings:hover + #noUse{
+  display:flex;
+  transition: all .7s ease;
+  animation-name:noUseAni;
+  animation-duration: .2s;
+  animation-iteration-count: infinite;
+  border:0;
+  background:rgb(20,20,20);;
+  height:140%;
+}
+.NUText{
+  position: absolute;
+  top:30%;
+  left:36%;
+  width:50%;
+}

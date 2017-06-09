@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="script/libraries/jquery-3.2.1.slim.js" type="text/javascript"></script> <!-- //Script Libraries of Processing and JQuery -->
+    <script src="script/libraries/p5.min.js" type="text/javascript"></script>
+    <script src="script/libraries/p5.dom.min.js" type="text/javascript"></script>
+    <script src="script/libraries/p5.sound.min.js" type="text/javascript"></script>
+
+    <script src="script/endFunc.js" type="text/javascript"></script> <!-- //Somewhat Organized files of different main function for easier searching -->
+    <script src="script/globalVariables.js" type="text/javascript"></script>
+    <script src="script/timerFunc.js" type="text/javascript"></script>
+    <script src="script/saveFunc.js" type="text/javascript"></script>
+    <script src="script/deleteFunc.js" type="text/javascript"></script>
+    <script src="script/regionArrays.js" type="text/javascript"></script>
+    <script src="script/brushFunc.js" type="text/javascript"></script>
+    <script src="script/main.js" type="text/javascript"></script>
+
+    <link href="style/windowPrompts.css" rel="STYLESHEET" type="text/css"><!-- //CSS is also placed in different files for easier access. -->
+    <link href="style/bottom.css" rel="STYLESHEET" type="text/css" >
+    <link href="style/menu.css" rel="STYLESHEET" type="text/css" >
+    <link href="style/colours.css" rel="STYLESHEET" type="text/css" >
+    <link href="style/main.css" rel="STYLESHEET" type="text/css" >
+
+  <link rel="shortcut icon" href="img/favicon.png" />
+  <meta name="theme-color" content="rgb(20, 20, 20)">
+  <title>Pokédoodle.tumblr</title>
+</head>
+<body id="body">
+
+        <!-- ///////////// GAME UI -->
+<div id="defaultCanvasDIV"></div>
+
+<div id="pokeName" class="pokeName"><p id="pokeNameText" class="pokeNameText"></p></div>  <!--//Displays Pokemon Name -->
+
+<div id="submit" class="submit"><a href="https://pokedoodle.tumblr.com/submit" target="_blank" id="submitIcon" class="submitIcon">✉️</a></div>
+<div id="picPoke" class="picPoke"><p>🖼️</p></div>
+<div id="newPoke" class="newPoke"><p>♻️</p></div>    <!--//UI that refreshes canvas and Pokemon names -->
+<div id="nPSure" class="nPSure"><p>♻️❓</p></div>
+
+<div id="timerDiv" class="timerDiv"><p id="seconds" clas="seconds"></p></div>   <!-- //Righthand clock face -->
+
+        <!-- ///////////// TOP UI -->
+
+  <div id="title" class="title"> <a href="privacyandcopyright/index.html" target="_blank" id="ghostName" class="ghostName">Pokédoodle 🍙</a></div>   <!--//Title screen name -->
+
+  <div id="pen" class="pen" onclick="pen">    <!-- //These are the elements for the colours and other top UI elements. -->
+    <div id="colours" class="colours">
+      <div id="settings" class="settings"><p id="speakerIcon">🔊</p></div>
+      <div id="noUse" class="noUse"><p class="NUText">REALLY NOT FEELING UP TO IT RIGHT NOW. SORRY.</p></div>
+        <div id="spacer" class="spacer"></div>
+      <div id="red" class="red"></div>
+      <div id="pink" class="pink"></div>
+      <div id="orange" class="orange"></div>
+      <div id="yellow" class="yellow"></div>
+      <div id="green" class="green"></div>
+      <div id="teal" class="teal"></div>
+      <div id="blue" class="blue"></div>
+      <div id="purple" class="purple"></div>
+      <div id="black" class="black"></div>
+      <div id="grey" class="grey"></div>
+      <div id="white" class="white"></div>
+      <div id="trueBLK" class="trueBLK"></div>
+      <div id="mic" class="mic"><p id="micIcon">🎙️</p></div>
+        <div id="spacer1" class="spacer1"></div>
+      <div id="clear" class="clear"><p id="clearIcon">⚙️</p></div>
+    </div>
+  </div>
+
+
+  <!-- ///////// Bottom UI -->
+  <div id="bottom" class="bottom">
+    <p id="smallB" class="smallB" >➖</p><p id="bigB" class="bigB" >➕</p>
+    <div id="toolBox" class="toolBox"><p id="toolIcon">🖌️</p></div>
+    <input id="brushSize" class="brushSize" type=range min=1 max=50 value=8 >
+      <div id="brushCircle" class="brushCircle">⚪</div>
+    <div id="save" class="save" ><p>💾</p></div>
+  </div>
+
+
+          <!-- ///////// Dialog Box UI -->
+
+          <div id="stopDraw" class="stopDraw"></div>
+
+
+  <div id="RegionAsk" class="RegionAsk">   <!--//Main Menu box to select regions.-->
+    <!-- <p class="regSel">🌐</p> -->
+    <div id="regions" class="regions">
+        <p  id="Kanto" class="Kanto">Kanto</p>
+        <p  id="Johto" class="Johto">Johto</p>
+        <p  id="Hoenn" class="Hoenn">Hoenn</p>
+        <p  id="Sinnoh" class="Sinnoh">Sinnoh</p>
+        <p  id="Unova" class="Unova">Unova</p>
+        <p  id="Kalos" class="Kalos">Kalos</p>
+        <p  id="Aloha" class="Aloha">Aloha</p>
+      </div>
+  </div>
+
+  <!-- //Select the time in the main menu -->
+  <div id="selectedTimeDiv" class="selectedTimeDiv">
+    <p id="timeSel" class="timeSel">🕟</p><br> <!-- //This clock face changes instantly depending on time value-->
+     <p id="clockDWN" class="clockDWN" >➖</p>
+       <input id="timeSelect" class="timeSelect" type=range min=10 max=24 value=20 > <!-- //Slider to change clock value-->
+      <p id="clockUP" class="clockUP">➕</p>
+  </div>
+
+  <div id="backgroundVal" class="backgroundVal"> <!--//Change background value.-->
+    <div id="blackBG" class="blackBG">🔳</div><div id="whiteBG" class="whiteBG">⬜</div>
+  </div>
+
+
+  <div id="photo" class="photo"><p id="clapper">🎨</p></div>  <!--  //Begins the game, time, etc. -->
+  <!-- <div id="flash" class="flash"></div> -->
+
+  <div id="RUSure" class="RUSure">  <!--  //Asks if you want to go back to main menu, was a delete prompt before. -->
+    <p class="delete">⚙️❓</p>
+    <div class="askDel"> <p id="yesDel" class="yesDel">✔️</p><p id="noDel" class="noDel">⭕</p></div>
+  </div>
+
+  <!-- <div id="newPokemon" class="newPokemon">   //Unused box that I may use again
+    <p class="delete">♻️❓</p>
+    <div class="askDel"> <p id="yesDel" class="yesDel">✔️</p><p id="noDel" class="noDel">⭕</p></div>
+  </div> -->
+
+  <div id="RUSave" class="RUSave"> <!--//Dialog box asking if the user wants to save an image.-->
+    <p class="saveQues">💾❓</p>
+    <div class="askSav"> <a  id="dl"><p id="yesSav" class="yesSav">✔️</p></a><p id="noSav" class="noSav">⭕</p> </div>
+  </div>
+
+            <!-- ///////// CREDITS -->
+
+  <div class="credits" id="credits">  <!--  //This is the credits hidden behind the title menu. -->
+    <div class="leftCred">
+    <a href="privacyandcopyright/index.html" target="_blank" id="p_b" class="p_b">🌐 Copyright and Privacy</a>
+    </div>
+  </div>
+
+  <!-- This is the ending UI to show the user that time has almost ended. -->
+  <div id="endPoint" class="endPoint"><p id="endPointIcon" class="endPointIcon"></p></div>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+*{
+  padding:0;
+  margin:0;
+  border:0;
+}
+
+html{
+  background-color: rgb(20, 20, 20);
+   overflow:hidden;
+  user-select: none;
+  text-align: center;
+}
+
+.showImages{
+  border: 4px solid rgb(250, 250, 250);
+  height:75%;
+  width:75%;
+  overflow: hidden;
+  user-select: none;
+  position: absolute;
+  left:13%;
+  top:10%;
+  border-radius: 35px;
+}
+
+.closeTab{
+    position: absolute;
+  /*height:25%;*/
+  height:100%;
+  /*width:75%;*/
+  width:100%;
+    /*left:13%;*/
+    transition: all .7s ease;
+}
+.closeTab:hover{
+  background-color: rgb(130, 50, 55);
+    transition: all .1s ease;
+}
+
+/*.scrollUp{
+  position: absolute;
+  height:100%;
+  width:13%;
+  left:0;
+  transition: all .7s ease;
+}
+.scrollUpIcon,.scrollDownIcon{
+  position: absolute;
+  left:30%;
+  top:40%;
+}
+.scrollDown{
+  position: absolute;
+  height:100%;
+  width:13%;
+  left:88%;
+  transition: all .7s ease;
+}
+.scrollDown:hover,.scrollUp:hover{
+    background-color: rgb(145, 180, 75);
+      transition: all .1s ease;
+}*/
+
+p{
+  color: white;
+  font-size: 400%;
+}
+
+#doodleName{
+  color: white;
+  position: absolute;
+  font-size: 400%;
+  top:86%;
+  width:100%;
+  font-family: Calibri, Verdana, sans-serif;
+}
