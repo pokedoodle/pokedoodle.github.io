@@ -24,7 +24,7 @@
 .purple:active{  background-color: rgb(110, 70, 140);}
 
 .black{ background-color: rgb(75, 90, 90);}
-.black;:active{  background-color: rgb(55, 70, 70);}
+.black:active{  background-color: rgb(55, 70, 70);}
 
 .grey{  background-color: rgb(145, 150, 160);}
 .grey:active{  background-color: rgb(125, 130, 140);}
