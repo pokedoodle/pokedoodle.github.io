@@ -124,7 +124,7 @@ function draw() {//Processing draw function. This function repeats at 60FPS.
     newPoke.style.left="100%";
     picPoke.style.left="-5%";
     submit.style.left="-5%";
-    helpMe.style.left="105%";
+    helpMe.style.left="85%";
   }
 
   //+++Misc functions that always fire.
