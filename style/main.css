@@ -64,7 +64,7 @@ html{
   transition: all .2s ease;
 }
 
-.clear p,.settings p,.newPoke p,.npSure p,.picPoke p,.submit p,.mic p{
+.clear p,.settings p,.newPoke p,.npSure p,.picPoke p,.helpMe p,.submit p,.mic p{
   position: relative;
   top:-2px;
   text-align: center;
@@ -73,13 +73,13 @@ html{
 
 
 /*New Pokemon Button*/
-#newPoke:hover,#picPoke:hover,#submit:hover,#nPSure:hover{
+#newPoke:hover,#picPoke:hover,#submit:hover,#nPSure:hover,#helpMe:hover{
   background-color: rgb(200,200,200);
 }
 
 #newPoke{
   position:absolute;
-  background:rgb(20,20,20);;
+  background:rgb(20,20,20);
   border-radius: 5px;
   top:75%;
   left:105%;
@@ -89,7 +89,7 @@ html{
 #nPSure{
   display:none;
   position:absolute;
-  background:rgb(20,20,20);;
+  background:rgb(20,20,20);
   border-radius: 5px;
   top:74.2%;
   left:84.6%;
@@ -98,7 +98,7 @@ html{
 }
 #picPoke{
   position:absolute;
-  background:rgb(20,20,20);;
+  background:rgb(20,20,20);
   border-radius: 5px;
   top:75%;
   left:-5%;
@@ -107,7 +107,7 @@ html{
 }
 #submit{
   position:absolute;
-  background:rgb(20,20,20);;
+  background:rgb(20,20,20);
   border-radius: 5px;
   top:45%;
   left:-9%;
@@ -115,6 +115,18 @@ html{
   transition: all .1s ease;
 }
 .submitIcon{
+  text-decoration: none;
+}
+#helpMe{
+  position:absolute;
+  background:rgb(20,20,20);
+  border-radius: 5px;
+  top:75%;
+  left:105%;
+  font-size: 4vw;
+  transition: all .1s ease;
+}
+.helpIcon{
   text-decoration: none;
 }
 
