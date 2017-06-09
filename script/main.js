@@ -60,8 +60,8 @@ function draw() {//Processing draw function. This function repeats at 60FPS.
  document.getElementById('teal').addEventListener("click", function(){colour= 'rgb(130, 180, 185)'; turnOffMic();});
  document.getElementById('blue').addEventListener("click", function(){colour= 'rgb(130, 200, 210)'; turnOffMic();});
  document.getElementById('purple').addEventListener("click", function(){colour= 'rgb(130, 90, 160)'; turnOffMic();});
-  document.getElementById('black').addEventListener("click", function(){colour= 'rgb(75, 90, 90)'; turnOffMic();});
-  document.getElementById('grey').addEventListener("click", function(){colour= 'rgb(145, 150, 160)'; turnOffMic();});
+ document.getElementById('black').addEventListener("click", function(){colour= 'rgb(75, 90, 90)'; turnOffMic();});
+ document.getElementById('grey').addEventListener("click", function(){colour= 'rgb(145, 150, 160)'; turnOffMic();});
  document.getElementById('white').addEventListener("click", function(){colour= 'rgb(250, 250, 250)'; turnOffMic();});
  document.getElementById('trueBLK').addEventListener("click", function(){colour= 'rgb(20, 20, 20)'; turnOffMic();});
  document.getElementById('mic').addEventListener("click", micColour);
@@ -77,15 +77,15 @@ function draw() {//Processing draw function. This function repeats at 60FPS.
    document.getElementById('Unova').addEventListener("click", getUnova);
    document.getElementById('Kalos').addEventListener("click", getKalos);
    document.getElementById('Aloha').addEventListener("click", getAloha);
-    document.getElementById('regions').addEventListener("click", UISoundClick);
+   document.getElementById('regions').addEventListener("click", UISoundClick);
 
     //+++Click events for settings menu
-    document.getElementById('timeSelect').addEventListener("click", UISoundClick);
-    document.getElementById('blackBG').addEventListener("click", function(){blackBGf(); UISoundClick();});
-    document.getElementById('whiteBG').addEventListener("click", function(){whiteBGf(); UISoundClick();});
-    document.getElementById('clockUP').addEventListener("click", clockUp);
-    document.getElementById('clockDWN').addEventListener("click", clockDwn);
-    var selectedTime = timeSelect.value;
+   document.getElementById('timeSelect').addEventListener("click", UISoundClick);
+   document.getElementById('blackBG').addEventListener("click", function(){blackBGf(); UISoundClick();});
+   document.getElementById('whiteBG').addEventListener("click", function(){whiteBGf(); UISoundClick();});
+   document.getElementById('clockUP').addEventListener("click", clockUp);
+   document.getElementById('clockDWN').addEventListener("click", clockDwn);
+   var selectedTime = timeSelect.value;
  }
 
 //+++ Mic brush colour value generator
