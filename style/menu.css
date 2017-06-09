@@ -165,9 +165,8 @@ animation:rainbow 1s infinite;
 }
 .blackBG{
   top:14%;
-  left:1%;
+  left:5%;
   height:auto;
-  letter-spacing: 5px;%;
   position: absolute;
   font-size: 2vw;
 }
