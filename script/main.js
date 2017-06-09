@@ -224,7 +224,8 @@ function beginDrawing(){ //Initiates the "game." Arranges the appropriate CSS, v
   RegionAsk.style.left="-50%";
   selectedTimeDiv.style.left="150%";
   backgroundVal.style.top="100%";
-  newPoke.style.left="105%";
+  newPoke.style.left="85%";
+  helpMe.style.left="105%";
   if (sndOn){ //Checks if sound was muted for not.
     sndPhoto.volume=.5; //Lowers initial colume of the sound.
     sndPhoto.play();
