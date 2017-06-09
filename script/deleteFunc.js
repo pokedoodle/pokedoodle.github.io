@@ -80,6 +80,7 @@ function newPokes(){
   stopDraw.style.display="none";
   picPoke.style.left="-5%";
   submit.style.left="-5%";
+  helpMe.style.left="105%";
   document.getElementById("nPSure").style.display="none";
   if (sndOn){
    sndnoPhoto.play();
