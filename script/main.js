@@ -36,6 +36,7 @@ function draw() {//Processing draw function. This function repeats at 60FPS.
  document.getElementById('settings').addEventListener("click", muteSound);
  document.getElementById('picPoke').addEventListener("click", pokeSearch);
  document.getElementById('submit').addEventListener("click", submitDrawing);
+ document.getElementById('helpMe').addEventListener("click", howToLink);
 
 
   //+++Click events to Save and Delete
@@ -123,6 +124,7 @@ function draw() {//Processing draw function. This function repeats at 60FPS.
     newPoke.style.left="100%";
     picPoke.style.left="-5%";
     submit.style.left="-5%";
+    helpMe.style.left="105%";
   }
 
   //+++Misc functions that always fire.
@@ -243,6 +245,13 @@ function pokeSearch(){
 //Opens a new tab to submit a drawing to the pokedoodle.tumblr.com blog
 function submitDrawing(){
   var win = window.open("https://pokedoodle.tumblr.com/submit", '_blank');
+  win.focus();
+}
+
+//+++ How to Link
+//Opens a new tab for help with UI elements at the pokedoodle.tumblr.com blog
+function howToLink(){
+  var win = window.open("https://pokedoodle.tumblr.com/howto", '_blank');
   win.focus();
 }
 
