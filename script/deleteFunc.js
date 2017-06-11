@@ -25,8 +25,8 @@ function yesSettings(){
  bottom.style.display='none';
  colours.style.display='none';
  stopDraw.style.display = "block";
- stopDraw.style.height = "100%";
- stopDraw.style.top = "16px";
+ stopDraw.style.height = "90%";
+ stopDraw.style.top = "5%";
  title.style.display = "block";
  title.style.height = "5%";
  pen.style.display = "none";
