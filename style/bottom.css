@@ -92,13 +92,3 @@
   text-align: center;
   font-family: Calibri, Verdana, sans-serif;
 }
-
-
-
-/*Ending animation*/
-.endPoint{
-  position: absolute;
-  font-size: 500%;
-  left:46.5%;
-  top:-15%;
-}
