@@ -187,12 +187,12 @@ animation:rainbow 1s infinite;
   font-size: 4vw;
   color: rgb(200, 200, 200);
   align-items:baseline;
-  transition: all .3s ease;
+  transition: all .7s ease;
 }
 .photo:active{
   background-color: rgb(200, 200, 200);
 }
 .photo:hover{
   background-color: rgb(155, 190, 85);
-  transition: all .7s ease;
+  transition: all .3s ease;
 }
