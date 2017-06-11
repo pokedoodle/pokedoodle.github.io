@@ -107,8 +107,8 @@
 /*//////// Blocks drawing when UI element is active.*/
 .stopDraw{
   position: absolute;
-  top:16px;
-  height:100%;
+  top:5%;
+  height:90%;
   width:100%;
   display:block;
 }
