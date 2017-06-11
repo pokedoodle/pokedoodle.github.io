@@ -191,3 +191,6 @@ animation:rainbow 1s infinite;
 .photo:active{
   background-color: rgb(200, 200, 200);
 }
+.photo:hover{
+  background-color: rgb(155, 190, 85);
+  transition: all .7s ease;
