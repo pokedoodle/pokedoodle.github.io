@@ -17,12 +17,12 @@
   transition: all .2s ease;
 }
 @keyframes rainbow { /*Adds a rainbow effect to the titlebar */
-0%  {background-color: rgb(207, 69, 69);}
-20% {background-color: rgb(238, 231, 57);}
-40% {background-color: rgb(0, 175, 12);}
-60% {background-color: rgb(46, 98, 255);}
-80% {background-color: rgb(142, 73, 255);}
-100% {background-color: rgb(207, 69, 69);}
+0%  {background-color: rgb(170, 90, 95);}
+20% {background-color: rgb(250, 170, 110);}
+40% {background-color: rgb(245, 230, 130);}
+60% {background-color: rgb(175, 210, 105);}
+80% {background-color: rgb(130, 200, 210);}
+100% {background-color: rgb(130, 90, 160);}
 }
 .title:hover{
 animation:rainbow 1s infinite;
@@ -82,7 +82,7 @@ animation:rainbow 1s infinite;
   transition: all .7s ease;
 }
 .Kanto:hover,.Johto:hover,.Hoenn:hover,.Sinnoh:hover,.Unova:hover,.Kalos:hover,.Aloha:hover{
-  background-color: rgb(135, 170, 65);
+  background-color: rgb(175, 210, 105);
   transition: all .1s ease;
 }
 .Kanto:active,.Johto:active,.Hoenn:active,.Sinnoh:active,.Unova:active,.Kalos:active,.Aloha:active{
