@@ -112,3 +112,12 @@
   width:100%;
   display:block;
 }
+
+
+/*Ending animation*/
+.endPoint{
+  position: absolute;
+  font-size: 500%;
+  left:46.5%;
+  top:-15%;
+}
