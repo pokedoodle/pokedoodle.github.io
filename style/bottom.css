@@ -81,8 +81,8 @@
 }
 
 /*Misc hover animation*/
-.toolBox:hover,.smallB:hover,.bigB:hover,.brushSize:hover,.save:hover,.photo:hover{
-  background-color: rgb(155, 190, 85);
+.toolBox:hover,.smallB:hover,.bigB:hover,.brushSize:hover,.save:hover{
+  background-color: rgb(200, 200, 200);
   transition: all .7s ease;
 }
 
