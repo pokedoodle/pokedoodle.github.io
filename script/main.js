@@ -37,7 +37,7 @@ function draw() {//Processing draw function. This function repeats at 60FPS.
  document.getElementById('picPoke').addEventListener("click", pokeSearch);
  document.getElementById('submit').addEventListener("click", submitDrawing);
  document.getElementById('helpMe').addEventListener("click", howToLink);
-
+  
 
   //+++Click events to Save and Delete
   document.getElementById('save').addEventListener("click", saveSelect);
@@ -226,6 +226,7 @@ function beginDrawing(){ //Initiates the "game." Arranges the appropriate CSS, v
   backgroundVal.style.top="100%";
   newPoke.style.left="85%";
   helpMe.style.left="105%";
+  coffee.style.left="105%";
   if (sndOn){ //Checks if sound was muted for not.
     sndPhoto.volume=.5; //Lowers initial colume of the sound.
     sndPhoto.play();
