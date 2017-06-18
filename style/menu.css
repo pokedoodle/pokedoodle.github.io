@@ -196,3 +196,8 @@ animation:rainbow 1s infinite;
   background-color: rgb(155, 190, 85);
   transition: all .3s ease;
 }
+
+.coffee{
+  position:absolute;
+  top:10%;
+  left:85%;
