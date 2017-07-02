@@ -83,8 +83,8 @@ function newPokes(){
   picPoke.style.left="-5%";
   submit.style.left="-5%";
   helpMe.style.left="105%";
-  coffee.style.left="105%";
   document.getElementById("nPSure").style.display="none";
+  coffee.style.left="105%";
   if (sndOn){
    sndnoPhoto.play();
   }
