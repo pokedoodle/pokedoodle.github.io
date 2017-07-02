@@ -37,7 +37,7 @@ function yesSettings(){
  timerDiv.style.display = "none";
  pokeName.style.display = "none";
  helpMe.style.left = "85%";
- coffee.style.left = "85%";
+//  coffee.style.left = "85%";
  document.getElementById("nPSure").style.display="none";
  newPoke.style.display="block";
 }
@@ -84,7 +84,7 @@ function newPokes(){
   submit.style.left="-5%";
   helpMe.style.left="105%";
   document.getElementById("nPSure").style.display="none";
-  coffee.style.left="105%";
+//   coffee.style.left="105%";
   if (sndOn){
    sndnoPhoto.play();
   }
