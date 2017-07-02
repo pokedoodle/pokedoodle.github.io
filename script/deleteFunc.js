@@ -38,8 +38,8 @@ function yesSettings(){
  pokeName.style.display = "none";
  helpMe.style.left = "85%";
 //  coffee.style.left = "85%";
- document.getElementById("nPSure").style.display="none";
  newPoke.style.display="block";
+ document.getElementById("nPSure").style.display="none";
 }
 
 //If user selects No to settings.
